@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+
+	width: 100%;
+	font-family: 'Archivo Narrow', 'Archivo Narrow Medium', 'Archivo Narrow SemiBold';
+	position: relative;
+	max-width: 100%;
+}
+
+nav{
+	transform: translateY(31px);
+	margin: auto;
+	margin-left: 33%;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:#E8E9FF;
+	font-size: 16px;
+}
+
+
+.menu-link::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background:#E8E9FF;
+	transition: width .3s;
+}
+
+.menu-link:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.menu-link{
+	transition: .0s;
+}
+
+.menu-link:hover{
+	transition: .5s ease;
+	transform: scale(1.3) ease;
+}
+
+.text{
+	text-align: center;
+	color: aliceblue;
+	font-family: "Libre Baskerville";
+}
+
+fieldset{
+	border-width: 3px;
+	border-color: aliceblue;
+	transition: 1s;
+}
+
+.intro-box{
+	width: 650px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: aliceblue;
+}
+
+.intro-box h2{
+	font-family: "Libre Baskerville";
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: lighter;
+}
+
+.intro-box h3{
+	font-family: "Archivo Narrow", "Archivo Narrow Medium", "Archivo Narrow SemiBold";
+	font-weight: lighter;
+}
+
+.intro-box p{
+	font-family: "Archivo Narrow", "Archivo Narrow Medium", "Archivo Narrow SemiBold";
+	font-weight: lighter;
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-bottom: 30px;
+}
+
+.interview{
+	background-image:url("../../images/about-bg.png");
+	background-position: center;
+	background-size: cover;
+	display: grid;
+	place-items: center;
+	color: aliceblue;
+	padding-top: 40%;
+	padding-bottom: 50px;
+	font-kerning: 1px;
+}
+
+.interview h2{
+	font-family: "Libre Baskerville";
+	font-weight: lighter;
+	transform: translateX(-60px);
+	text-indent: -10px;
+}
+
+.interview p{
+	padding-top: 10px;
+	font-family: "Archivo Narrow", "Archivo Narrow Medium", "Archivo Narrow SemiBold";
+	font-weight: lighter;
+	transform: translateX(150px);
+}
+
+.interview2{
+	background-image: url("../../images/stage-perf-1.png");
+	background-position: center;
+	background-size: cover;
+	display: grid;
+	place-items: center;
+	color: aliceblue;
+	padding-top: 5%;
+	padding-bottom: 50px;
+	font-kerning: 1px;
+}
+
+.interview2 h2{
+	font-family: "Libre Baskerville";
+	font-weight: lighter;
+	transform: translateX(-20px);
+	text-indent: -10px;
+}
+
+.interview2 p{
+	padding-top: 20px;
+	font-family: "Archivo Narrow", "Archivo Narrow Medium", "Archivo Narrow SemiBold";
+	font-weight: lighter;
+	transform: translateX(90px);
+}
+
+.interview3{
+	background-image: url("../../images/pravi-side.png");
+	background-position: center;
+	background-size: cover;
+	display: grid;
+	place-items: center;
+	color: aliceblue;
+	padding-top: 5%;
+	padding-bottom: 50px;
+	font-kerning: 1px;
+}
+
+.interview3 h2{
+	font-family: "Libre Baskerville";
+	font-weight: lighter;
+	transform: translateX(-30px);
+	text-indent: -10px;
+}
+
+.interview3 p{
+	padding-top: 20px;
+	padding-bottom: 15%;
+	font-family: "Archivo Narrow", "Archivo Narrow Medium", "Archivo Narrow SemiBold";
+	font-weight: lighter;
+	transform: translateX(90px);
+}
+
+.video{
+	padding-top: 70px;
+	padding-bottom: 80px;
+	display: grid;
+	place-items: center;
+}
+
+.video h3{
+	font-family: "Libre Baskerville";
+	font-weight: lighter;
+	color: aliceblue;
+	padding-bottom: 20px;
+}
+
+@media only screen and (max-width:700px){
+
+	
+	nav ul{
+		width: 100vw;
+		position: absolute;
+		left: -35px;
+		right: 0;
+		z-index: 2;
+		transform: translateX(-3vw);
+		transform: translateX(-10px);
+	}
+	
+	nav ul li{
+		display: inline-block;
+		margin-left: -5px;
+		padding-top: 15px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	
+	nav ul li a{
+		font-size: 12px;
+	}
+	
+	.intro-box{
+		width: 80%;
+	}
+	
+	.intro-box h3{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.intro-box p{
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	
+	.interview h2{
+		text-align: center;
+		width: 80%;
+		transform: translateX(12vw);
+		padding-top: 70vh;
+	}
+	
+	.interview p{
+		text-align: center;
+		width: 80%;
+		transform: translateX(12vw);
+	}
+	
+	.interview2 h2{
+		text-align: center;
+		width: 85%;
+		transform: translateX(4vw);
+	}
+	
+	.interview2 p{
+		text-align: center;
+		background: rgba(0, 0, 0, 0.3);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 80%;
+		transform: translateX(2vw);
+	}
+	
+	.interview3 h2{
+		text-align: center;
+		width: 85%;
+		transform: translateX(4vw);
+	}
+	
+	.interview3 p{
+		text-align: center;
+		width: 80%;
+		transform: translateX(2vw);
+	}
+	
+	iframe{
+		width: 85%;
+		height: auto;
+	}
+	
+	.video{
+		margin-top: -20%;
+	}
+	
+	.video h3{
+		text-align: center;
+		width: 75%;
+	}
+}

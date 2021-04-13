@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	transform: translateY(30px);
+	font-family: 'Archivo Narrow', 'Archivo Narrow Medium', 'Archivo Narrow SemiBold';
+	position: relative;
+	background-image: url("../../images/home-1-bg.png");
+	background-size: cover;
+	background-position:center;
+	max-width: 100%;
+}
+
+nav{
+	transform: translateY(-30px);
+	margin: auto;
+	margin-left: 33%;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color:#E8E9FF;
+	font-size: 16px;
+}
+
+
+.menu-link::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background:#E8E9FF;
+	transition: width .3s;
+}
+
+.menu-link:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+
+.menu-link{
+	transition: .0s;
+}
+
+.menu-link:hover{
+	transition: .5s ease;
+	transform: scale(1.3) ease;
+}
+
+.text-voila{
+	font-family: "Libre Baskerville";
+	text-align: left;
+	font-size: 86px;
+	font-weight: lighter;
+	color: aliceblue;
+	padding-left: 140px;
+	transform: translateY(70vh);
+}
+
+.pravi-float-1{
+	margin-top: 10px;
+	transform: translateX(50vh);
+	display: flex;
+	transition: .5s ease;
+	height: 100%;
+	width: 50%;
+}
+
+.text-pravi{
+	font-family: 'Archivo Narrow', 'Archivo Narrow Medium', 'Archivo Narrow SemiBold';
+	text-align: left;
+	color: aliceblue;
+	padding-left: 150px;
+	transform: translateY(68vh);
+	font-weight: lighter;
+}
+
+.container{
+	width: 100%;
+}
+
+.parallax{
+	background-color:#07070A;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 400px;
+}
+
+.txt-box{
+	margin-top: -100px;
+}
+
+p{
+	font-family: "Libre Baskerville";
+	text-align: center;
+	color: aliceblue;
+	font-size: 24px;
+	padding-top: 200px;
+	transition: 1.5s ease;
+}
+
+.about-container{
+	max-width:100%;
+	height: 750px;
+	background: url("../../images/about-bg.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.about-container h2{
+	font-family: "Libre Baskerville";
+	font-weight: lighter;
+	color: aliceblue;
+	transform: translateY(230px);
+	margin-left: 15%;
+}
+
+.about-text{
+	font-family:"Archivo Narrow", "Archivo Narrow Medium", "Archivo Narrow SemiBold";
+	color: aliceblue;
+	transform: translateY(100px);
+	margin-left: 20vh;
+	font-size: 16px;
+	text-align: left;
+}
+
+.pravi-float-2{
+	transition: .5s ease;
+	display: flex;
+	transform: translateX(30%);
+}
+
+.about-text p{
+	font-family: "Archivo Narrow", "Archivo Narrow Medium", "Archivo Narrow SemiBold";
+	font-size: 14px;
+	font-weight: lighter;
+	font-kerning: 1.5px;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: aliceblue;
+	margin-left: 81vh;
+	transform: translateY(-163%);
+}
+
+.video-box{
+	padding-bottom: 50px;	
+	background-color: black;
+	height: 400px;
+	display: grid;
+	place-items: center;
+}
+
+.video-box h3{
+	color: aliceblue;
+	font-family: "Libre Baskerville";
+	font-weight: lighter;
+}
+
+@media only screen and (max-width:700px){
+	
+	nav ul{
+		width: 100vw;
+		position: absolute;
+		left: -35px;
+		right: 0;
+		z-index: 2;
+		transform: translateX(-3%);
+	}
+	
+	nav ul li{
+		display: inline-block;
+		margin-left: -5px;
+		padding-top: 1px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	nav ul li a{
+		font-size: 12px;
+	}
+	
+	.pravi-float-1{
+		display: grid;
+		place-items: center;
+		width: 100vw;
+		transform: translateX(1vw);
+		padding-top: 50%;
+	}
+	
+	.head-text{
+		transform: translateX(-100px);
+	}
+	
+	.text-voila{
+		width: 80%;
+		display: grid;
+		place-items: center;
+ 		transform: translateY(30vh);
+	}
+	
+	.text-pravi{
+		width: 80%;
+		display: grid;
+		place-items:center;
+		transform: translateY(30vh);
+		padding-bottom: 20px;
+	}
+	
+	.txt-box p{
+		transform: translateX(10vw);
+		width: 80%;
+	}
+	
+	.pravi-float-2{
+		display: grid;
+		place-items: center;
+		transform: translateX(-32%);
+	}
+	
+	.about-text h2{
+		width: 100%;
+		position: absolute;
+		z-index: 2;
+		transform: translateY(350px);
+		left: -90px;
+	}
+	
+	.about-container{
+		height: 110vh;
+		margin-top: -10vh;
+	}
+	
+	iframe{
+		width: 85%;
+		height: 100%;
+		padding-bottom: 60px;
+		padding-top: 20px;
+	}
+	
+	.video-box h3{
+		padding-top: 450px;
+		padding-bottom: 50px;
+		text-align: center;
+		width: 80%;
+	}
+	
+	.about-text p{
+		padding-top: -50px;
+		background: #07070A;
+		background-position: center;
+		background-size: cover;
+		background-width: 80%;
+		width: 150%;
+		text-align: center;
+		transform: translateX(-170vw);
+	}
+	
+	.pravi-float-2{
+		margin-bottom: -100px;
+	}
+}
